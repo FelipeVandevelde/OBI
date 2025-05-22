@@ -10,13 +10,15 @@ As linguagens de programação aceitas pela OBI são:
 
 # Qual delas é a melhor?
 
-Para os problemas que serão apresentados nas fases **todas as linguagens vão servir**, você deve escolher a linguagem que possuí a sintaxe que lhe deixa confortavel.
+Para os problemas apresentados nas fases, todas as linguagens são adequadas. Você deve escolher aquela cuja sintaxe lhe **proporcione maior *conforto* e *familiaridade***.
 
-A Recomendação para os que já são acostumados e gostam do C# é o Java, pois sua sintaxe é bem semelhante em vários aspectos, porém uma outra recomendação boa é o Python que possuí uma alta curva de aprendizado por ser uma linguagem de alto nivel.
+A recomendação, para quem já está acostumado e aprecia o **C#**, é o **Java**, pois possui uma sintaxe bastante semelhante em diversos aspectos.
+
+Outra recomendação válida é o Python, que apresenta uma **curva de aprendizado** mais suave por ser uma linguagem de alto nível.
 
 # Exemplos de cada linguagem
 
-##### Os exemplos citados abaixo foram feitos usando um compilador online ([myCompiler](https://www.mycompiler.io/pt)).
+##### Os exemplos apresentados abaixo foram elaborados utilizando um compilador online: ([myCompiler](https://www.mycompiler.io/pt)).
 
 ## Imprimir um output
 
