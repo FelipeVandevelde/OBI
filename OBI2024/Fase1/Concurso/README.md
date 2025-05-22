@@ -21,7 +21,7 @@ Seu programa deve imprimir uma linha contendo um único inteiro $C$, a nota de c
 
 ## Restrições
 
-* $ 1 \leq K \leq N \leq 500 $
+* \( 1 \leq K \leq N \leq 500 /)
 * $ 1 \leq A_i \leq $ 100 para todo $1 \leq i \leq N$
 
 ## Infromações sobre a pontuação
