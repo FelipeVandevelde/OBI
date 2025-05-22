@@ -34,20 +34,20 @@ A modalidade de programação é dividida em três fases:
 Os resultados finais serão divulgados junto ao gabarito das provas na [página oficial da OBI](http://obi.sbc.org.br).
 
 A ordem de classificação é determinada pela pontuação do competidor na respectiva fase.
-Cada tarefa submetida passa por uma bateria de testes, que gera uma pontuação de **0** a **100**.
+Cada tarefa submetida passa por variados testes, gerando, ao final, uma pontuação de **0** a **100**.
 
 ### Certificados
 
 **Todos** os participantes, coordenadores e colaboradores terão direito a certificados:
 
-- pela COTEMIG: os certificados de **horas complementares**;
-- pela OBI: o certificado de **participação**.
+- pela COTEMIG: certificados de **horas complementares**;
+- pela OBI: certificado de **participação**.
 
 ### Medalhas
 
 Os melhores classificados na **Fase Nacional** serão premiados com medalhas nas categorias **ouro**, **prata** e **bronze**, em quantidades a serem determinadas pela Comissão Nacional, dependendo da quantidade de participantes e dos resultados.
 
-Caso alunos da escola tenham direito a medalhas, elas serão enviadas sem custo para as escolas, juntamente com a solicitação de uma contribuição voluntária (não obrigatória) no valor de R\$ 50,00 para escolas públicas e R\$ 80,00 para escolas privadas.
+Caso os alunos da escola tenham direito a medalhas, elas serão enviadas sem custo para as escolas, juntamente com a solicitação de uma contribuição voluntária (não obrigatória) no valor de R\$ 50,00 para escolas públicas e R\$ 80,00 para escolas privadas.
 
 A contribuição voluntária é única para cada escola, independentemente do número de medalhas conquistadas pela escola.
 
