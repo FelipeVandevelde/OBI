@@ -15,7 +15,7 @@
   --shadow-discord-hover: 0 8px 25px rgba(88, 101, 242, 0.6);
 
   /* Borders */
-  --border: 1px solid #e0e7ef;
+  --border: 1px solid #e0e0e0;
   --border-accent: 1px solid #FFD70044;
   --border-table: var(--border);
   --border-prize: 1px solid rgba(255, 255, 255, 0.1);
@@ -89,10 +89,10 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  line-height: 1.6;
+  line-height: 1.4;
   color: var(--text);
   background: var(--background-body);
-  font-size: 14px;
+  font-size: 1rem;
   position: relative;
   overflow-x: hidden;
 }
@@ -311,7 +311,6 @@ body::after {
 
 a {
   color: var(--color-link);
-  text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -329,7 +328,7 @@ table {
 
 th,
 td {
-  padding: 12px 15px;
+  padding: 10px 20px;
   text-align: left;
   border-bottom: var(--border-table);
 }
@@ -338,9 +337,8 @@ th {
   background: #1e7d36;
   font-weight: 600;
   color: var(--color-table-header);
-  font-size: 13px;
+  font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
   font-family: 'JetBrains Mono', monospace;
 }
 
@@ -350,7 +348,7 @@ table:not(.prize-table) th {
 }
 
 td {
-  font-size: 14px;
+  font-size: 1rem;
   color: var (--color-table-text);
 }
 
@@ -419,16 +417,6 @@ ul li::marker {
   overflow: hidden;
 }
 
-.highlight-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(to bottom, var(--accent), var(--secondary));
-}
-
 .warning-box {
   background: var(--background-warning);
   border-left: 4px solid var(--color-warning-border);
@@ -438,16 +426,6 @@ ul li::marker {
   box-shadow: var(--shadow-light);
   position: relative;
   overflow: hidden;
-}
-
-.warning-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(to bottom, var(--accent), var(--secondary));
 }
 
 .success-box {
@@ -490,7 +468,6 @@ ul li::marker {
 
 .resources-list a {
   color: var(--color-link);
-  text-decoration: none;
   font-weight: 500;
   display: block;
   transition: all 0.3s ease;
@@ -587,7 +564,7 @@ ul li::marker {
 .footer {
   margin-top: 50px;
   padding-top: 30px;
-  border-top: 2px solid var(--color-shadow-footer);
+  border-top: 2px solid var(--primary);
   text-align: center;
   color: var(--color-footer);
   font-size: 12px;
@@ -604,19 +581,6 @@ ul li::marker {
   border: none;
   padding: 0;
   margin: 0;
-}
-
-.footer::before {
-  content: "</>";
-  display: block;
-  position: absolute;
-  top: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--background-footer);
-  padding: 0 15px;
-  color: var(--color-shadow-footer);
-  font-family: 'JetBrains Mono', monospace;
 }
 
 @media print {
@@ -639,7 +603,6 @@ ul li::marker {
   }
 }
 
-/* Discord floating button */
 .discord-float {
   position: fixed;
   bottom: 30px;
@@ -713,11 +676,115 @@ ul li::marker {
   transform: translateY(0);
 }
 
+.list-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 120px;
+  margin: 15px 0;
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 100%;
+    padding: 0 8px;
+  }
+  .page {
+    padding: 20px 5px;
+    margin-bottom: 20px;
+    max-width: 98vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logo-container {
+    gap: 30px;
+    padding: 10px;
+  }
+}
+
 @media (max-width: 600px) {
+
   .discord-float {
     bottom: 20px;
     right: 20px;
     width: 50px;
     height: 50px;
+  }
+
+  .container {
+    padding: 0 2px;
+  }
+  .page {
+    padding: 10px 20px;
+    border-radius: 8px;
+    max-width: 98vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background: var(--white);
+  }
+  .section {
+    padding: 10px 10px;
+    border-radius: 8px;
+  }
+  .section-title {
+    font-size: 1.25rem;
+    padding-bottom: 6px;
+  }
+  .emoji {
+    font-size: 18px;
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+  }
+  .header h1 {
+    font-size: 22px;
+  }
+  .header .subtitle {
+    font-size: 13px;
+  }
+  .footer {
+    font-size: 10px;
+    padding-top: 15px;
+    margin-top: 20px;
+  }
+  .resources-list {
+    padding: 10px;
+  }
+  .highlight-box, .warning-box, .success-box {
+    padding: 10px;
+    border-radius: 0 8px 8px 0;
+  }
+  .subsection-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  ul, ol {
+    padding-left: 14px;
+    margin: 8px 0;
+  }
+  li {
+    margin: 4px 0;
+  }
+
+  .list-flex {
+    gap: 0px;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 700px) {
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 8px;
+  }
+  thead, tbody, th, td, tr {
+    display: revert;
+  }
+  th, td {
+    font-size: 12px;
+    padding: 8px 6px;
   }
 }
