@@ -277,19 +277,9 @@ body::after {
   align-items: center;
   gap: 10px;
   padding-bottom: 12px;
-  border-bottom: 2px solid var(--secondary);
+  border-bottom: 2px solid #ccc;
   position: relative;
   font-family: 'JetBrains Mono', monospace;
-}
-
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 50px;
-  height: 2px;
-  background: var(--accent);
 }
 
 .emoji {
@@ -316,6 +306,7 @@ a {
 }
 
 table {
+  
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
@@ -385,7 +376,7 @@ tr:hover {
 .subsection-title::before {
   content: "</>";
   font-size: 12px;
-  color: var(--accent);
+  color: var(--primary);
   margin-right: 10px;
   opacity: 0.7;
 }
@@ -403,7 +394,7 @@ li {
 }
 
 ul li::marker {
-  color: var(--color-marker);
+  color: var(--secondary);
 }
 
 .highlight-box {
@@ -684,6 +675,11 @@ ul li::marker {
   margin: 15px 0;
 }
 
+table th,
+table td {
+  width: 50%;
+}
+
 @media (max-width: 900px) {
   .container {
     max-width: 100%;
@@ -775,11 +771,11 @@ ul li::marker {
 @media (max-width: 700px) {
   table {
     display: block;
-    width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     border-radius: 8px;
   }
+
   thead, tbody, th, td, tr {
     display: revert;
   }
